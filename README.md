@@ -2,7 +2,7 @@
 
 My solution to **Problem Statement 1** of the DareAISearch Front-End Developer assignment: a data explorer over 10,000 support tickets. It stays fast and never shows the wrong results, even when the API is slow and flaky.
 
-- **Live demo:** _add Vercel URL here_
+- **Live demo:** https://dare-ai-task.vercel.app/ (try a shared view: [open urgent refunds](https://dare-ai-task.vercel.app/?q=refund&status=open&sort=priority&order=desc))
 - **Demo video:** _add link here_
 
 ## What it does
