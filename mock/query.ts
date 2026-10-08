@@ -62,3 +62,11 @@ export function countByStatus(all: Ticket[], q: TicketQuery): StatusCounts {
   }
   return counts
 }
+
+
+
+
+
+
+
+

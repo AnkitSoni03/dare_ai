@@ -110,3 +110,5 @@ export function getTicketDetail(id: string): TicketDetail | undefined {
     messages,
   }
 }
+
+
