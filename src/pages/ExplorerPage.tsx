@@ -154,6 +154,7 @@ export function ExplorerPage() {
             page={query.page}
             pageSize={query.pageSize}
             total={list.isError ? undefined : data?.total}
+            failed={list.isError}
             onPage={(page) => update({ page })}
             onPageSize={(pageSize) => update({ pageSize })}
           />

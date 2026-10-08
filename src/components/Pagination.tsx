@@ -7,11 +7,13 @@ interface PaginationProps {
   pageSize: number
   /** Undefined while the current page has not loaded, so we never show a stale total. */
   total: number | undefined
+  /** The current page failed to load; the table shows the error, so the summary stays quiet. */
+  failed?: boolean
   onPage: (page: number) => void
   onPageSize: (size: number) => void
 }
 
-export function Pagination({ page, pageSize, total, onPage, onPageSize }: PaginationProps) {
+export function Pagination({ page, pageSize, total, failed = false, onPage, onPageSize }: PaginationProps) {
   const sizeId = useId()
   const pages = total === undefined ? undefined : Math.max(1, Math.ceil(total / pageSize))
   const first = (page - 1) * pageSize + 1
@@ -21,7 +23,9 @@ export function Pagination({ page, pageSize, total, onPage, onPageSize }: Pagina
     <nav className="pagination" aria-label="Pagination">
       <p className="pagination-summary">
         {total === undefined
-          ? 'Loading…'
+          ? failed
+            ? 'Results unavailable'
+            : 'Loading…'
           : total === 0 || last! < first
             ? `${formatNumber(total)} results`
             : `Showing ${formatNumber(first)}–${formatNumber(last!)} of ${formatNumber(total)}`}
