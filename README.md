@@ -122,4 +122,4 @@ I used **Claude Code** (Claude Opus) while building this. Claude wrote most of t
 - **Cross-check against the brief.** I had it go through the assignment and the JD line by line, then fix the gaps it found.
 - **Verification.** Before submitting I ran the tests and build, deployed, and tried slow, failing and offline requests myself.
 
-Chat history: [claude-code-chat.md](./claude-code-chat.md), the full Claude Code session from start to finish. It is translated from the original Hinglish, and personal details are redacted.
+Chat history: [claude-code-chat.md](./claude-code-chat.md), the full Claude Code session from start to finish, with a summary of the key decisions at the top. Personal details are redacted.
