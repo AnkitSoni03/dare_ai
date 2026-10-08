@@ -1,11 +1,12 @@
 # Claude Code conversation
 
-This is my full chat with Claude Code (Claude Opus) while building this project, from the first message to the last, on 7–8 Oct 2026.
+## This document contains my Claude Code conversation while building this project on 7–8 Oct 2026.
 
-- Under each "tool calls" toggle there is a short list of what Claude did: files read or written, commands run, browser checks.
-- Personal details (my application email, phone number, email addresses) are removed.
-- References to my resume and the JD are removed, since they are not part of the assignment.
-- My messages are lightly edited for readability. Some long replies from Claude are shortened. One part near the end, about preparing this file for submission, is skipped and marked.
+- For privacy, personal details such as application email, phone number, and unrelated resume/JD content have been removed.
+
+- The conversation is presented chronologically. My messages have only been lightly edited for readability, and some lengthy Claude Code tool-output details have been condensed. A small section near the end about preparing the conversation for submission has also been omitted as it contains no project-related discussion.
+
+- The technical discussion, decisions, iterations, corrections, and review of the implementation are retained.
 
 ## Key decisions I made
 
